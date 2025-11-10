@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Introduction — Alessa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="subpage about">
+  <header class="site-header small">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+         <img src="alessa logo.jpg" alt="Alessa logo" style="height:48px;vertical-align:middle;">
+        <span class="logo-text" style="font-weight:600;margin-left:8px;">Alessa</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+  <a href="#">About</a>
+  <div class="dropdown-box">
+    <a href="about-intro.html" class="drop-item">
+      <strong>Introduction</strong><br>
+      Learn about our company and legacy
+    </a>
+    <a href="about-vision.html" class="drop-item">
+      <strong>Vision & Mission</strong><br>
+      Our purpose and principles
+    </a>
+    <a href="about-management.html" class="drop-item">
+      <strong>Management</strong><br>
+      Meet our leadership team
+    </a>
+  </div>
+</li>
+          <li><a href="subsidiaries.html">Subsidiaries</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="cta" href="https://www.alessaonline.com/" target="_blank">shop with us</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger4" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="content about-content">
+    <nav class="about-tabs">
+      <a href="about-intro.html" class="active">Introduction</a>
+      <a href="about-vision.html">Vision & Mission</a>
+      <a href="about-management.html">Management</a>
+    </nav>
+
+    <section class="about-section">
+      <button class="btn-back" onclick="history.back()">← Back</button>
+
+      <h1>Introduction</h1>
+        <p>Al-Essa group, a diversified organization, delivers total solutions to clients in various sectors belonging to both private and public institutions, in Kuwait.
+        "Sales through Service" is the key to our success. We care about the value that our customers can derive by their association with us over 500 people, employed across 3 subsidiary companies, and a group turnover in 2020 of USD 80M.
+        Al Essa delivers a superior customer experience.
+        Our range of activities involves supplying products, supporting applications and providing maintenance for medical and analytical applications. The human resource requirements are met through supplemental staffing and home health-care programs.
+        We deliver complete solutions in facility engineering, providing mechanical piping, furniture, furnishing and equipment. We focus on improving quality of life through our rehabilitation expertise. In addition, we have executed several projects on a turnkey basis by combining our local project management and project support expertise with international technology partners.
+        Our ability to undertake this comprehensive range of activities comes from more than 44 years of corporate experience and the efforts of our dedicated employees making us proud of our unparalleled reputation for providing quality solutions, the result of corporate ethos that has won recognition from our valued customers.
+        A capital base of USD 18M and the diversified nature of operations ensure long-term stability and growth. As we contemplate our future, we are confident of our abilities to successfully meet the challengers and size opportunities that enhance stake holder.</p>
+
+        <p>"Life is a journey, and not a destination. A goal is only a milestone, and with the achievement of each goal we will set another more challenging one. It is a quest for continuous improvement and the root cause of any undesirable outcome must be identified and removed. How can we do more with less, and what can we do take out inefficiencies in our thoughts and our actions. We are responsible for the outcome. We shall be a disciplined people engaging in disciplined thought and action."</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <p>© 2013 – 2025 Al Essa Group. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ✅ Paste this here -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".main-nav");
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+  }
+
+  const dropdown = document.querySelector(".dropdown");
+  if (dropdown) {
+    const dropBtn = dropdown.querySelector(".dropbtn");
+    const dropMenu = dropdown.querySelector(".dropdown-menu");
+
+    if (dropBtn && dropMenu) {
+      dropdown.addEventListener("mouseenter", () => {
+        if (window.innerWidth > 768) {
+          dropMenu.style.display = "block";
+        }
+      });
+      dropdown.addEventListener("mouseleave", () => {
+        if (window.innerWidth > 768) {
+          dropMenu.style.display = "none";
+        }
+      });
+
+      dropBtn.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          dropMenu.classList.toggle("show");
+        }
+      });
+    }
+  }
+
+  document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (hamburger && navMenu) {
+        navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

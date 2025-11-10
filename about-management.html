@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About – Management – Al Essa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="subpage-about">
+  <header class="site-header small">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+         <img src="alessa logo.jpg" alt="Alessa logo" style="height:48px;vertical-align:middle;">
+        <span class="logo-text" style="font-weight:600;margin-left:8px;">Alessa</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+  <a href="#">About</a>
+  <div class="dropdown-box">
+    <a href="about-intro.html" class="drop-item">
+      <strong>Introduction</strong><br>
+      Learn about our company and legacy
+    </a>
+    <a href="about-vision.html" class="drop-item">
+      <strong>Vision & Mission</strong><br>
+      Our purpose and principles
+    </a>
+    <a href="about-management.html" class="drop-item">
+      <strong>Management</strong><br>
+      Meet our leadership team
+    </a>
+  </div>
+</li>
+          <li><a href="subsidiaries.html">Subsidiaries</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="cta" href="https://www.alessaonline.com/" target="_blank">shop with us</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger4" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main class="content about-content">
+    <nav class="about-tabs">
+      <a href="about-intro.html">Introduction</a>
+      <a href="about-vision.html">Vision & Mission</a>
+      <a href="about-management.html" class="active">Management</a>
+    </nav>
+
+    <section class="about-section">
+      <button class="btn-back" onclick="history.back()">← Back</button>
+
+      <h1>Management</h1>
+
+      <!-- K T Mathew -->
+      <div class="management-block">
+        <img src="kt mathew.jpg" alt="K T Mathew" class="management-photo" />
+        <div class="management-info">
+          <h2>K T MATHEW</h2>
+          <h3>Managing Partner, Al Essa Group</h3>
+            <p>A graduate in Chemistry and Microbiology, he worked as a medical researcher in India and served as a Consultant microbiologist at the Ministry of Health in Kuwait, before starting the Al Essa Medical & Scientific Equipment Co in 1977.</p>
+          <p>Visionary disciplined entrepreneur, with strong organization and motivational skills. Ability to see the big picture quickly and focus on ensuring a stable cash-flow to fund business needs. A great believer in the abundance of life, he consistently encourages employees to be the best they can and provides platform and resources for employees to perform with excellence.</p>
+        </div>
+      </div>
+
+      <!-- Thomas Mathew -->
+      <div class="management-block">
+        <img src="thomas mathew.jpg" alt="Thomas Mathew" class="management-photo" />
+        <div class="management-info">
+          <h2>THOMAS MATHEW</h2>
+          <h3>Director, Al Essa Group</h3>
+          <p>A graduate in Chemical Engineering (MS) and Business Administration (MBA), he worked in Europe for 12 years in the field of pharmaceuticals, furniture and building materials; opened markets in Iran, India and Pakistan before moving to Kuwait in 1998.</p>
+          <p>Brings a large dose of common sense and people skills to achieving business goals. Takes leadership seriously and looks at responsibility as stewardship. Breaks the complex into simple tasks with clear milestones and communicates and inspires staff to perform. A stickler for detail and excellence in workmanship. Conscious about cash-flow and fiscal prudence for long term business performance. Strategic Consultative Selling is the key driver in the business process. Ability to multi-task and focus on the essential. Develops critical thinkers to effectively achieve growth and sustainable performance.</p>
+        </div>
+      </div>
+
+      <!-- K O Mathew -->
+      <div class="management-block">
+        <img src="k o mathew.jpg" alt="K O Mathew" class="management-photo" />
+        <div class="management-info">
+          <h2>K O MATHEW</h2>
+          <h3>Director, Al Essa Group</h3>
+          <p>A graduate in Civil Engineering (MS) and Business Administration (MBA), worked in the US for 4 years in the field of engineering before moving to the Middle East in 1994.</p>
+          <p>Systematic in developing business. A stickler for policy and process to run systems. Conscious about cash-flow and financial statements for long term business performance. Ability to effectively plan, coordinate and execute various business activities. Ability to enable and empower subordinates to perform their jobs with creativity and commitment. Ensures the organization’s financial reporting reflects true business operational status for benefit of shareholders and provides financial advice as required.</p>
+        </div>
+      </div>
+
+      <!-- Sunita Mathew -->
+      <div class="management-block">
+        <img src="sunita mathew.jpg" alt="Sunita Mathew" class="management-photo" />
+        <div class="management-info">
+          <h2>SUNITA MATHEW</h2>
+          <h3>Director, Al Essa Group</h3>
+          <p>Holds an ME (Biomedical Engineering) from the USA and worked for 6 years in the US, in the rehabilitation industry, before joining Al-Essa Group in 1999.</p>
+          <p>Establishes and maintains positive working relationships with others, both internally and externally, to achieve the goals of the organization. Takes leadership seriously and sets priorities, develops a work schedule, monitors progress towards goals, tracks details, data information and activities. Positively influences the staff to achieve results that are in the best interest of the organization. Understands ethical behavior and business practices and ensures that own behavior and the behavior of others is consistent. Ability to multi-task and focus on the essential.</p>
+        </div>
+      </div>
+
+      <p>The Al Essa Group management team continues to embody excellence, discipline, and service, fostering a work culture that empowers individuals and drives sustainable growth across all sectors.</p>
+    </section>
+  </main>
+
+ <footer class="site-footer">
+  <div class="container">
+    <p>© 2013 – 2025 Al Essa Group. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ✅ Paste this here -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".main-nav");
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+  }
+
+  const dropdown = document.querySelector(".dropdown");
+  if (dropdown) {
+    const dropBtn = dropdown.querySelector(".dropbtn");
+    const dropMenu = dropdown.querySelector(".dropdown-menu");
+
+    if (dropBtn && dropMenu) {
+      dropdown.addEventListener("mouseenter", () => {
+        if (window.innerWidth > 768) {
+          dropMenu.style.display = "block";
+        }
+      });
+      dropdown.addEventListener("mouseleave", () => {
+        if (window.innerWidth > 768) {
+          dropMenu.style.display = "none";
+        }
+      });
+
+      dropBtn.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          dropMenu.classList.toggle("show");
+        }
+      });
+    }
+  }
+
+  document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (hamburger && navMenu) {
+        navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
